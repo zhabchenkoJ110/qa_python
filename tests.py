@@ -115,7 +115,7 @@ class TestBooksCollector:
         # добавляем одну книгу в избранное
         collector.add_book_in_favorites('Гордость и предубеждение и зомби')
         #проверям, что книга добавилась в Избранное
-        len(collector.get_list_of_favorites_books()) == 1
+        assert len(collector.get_list_of_favorites_books()) == 1
         #удаляем книгу из Избранного
         collector.delete_book_from_favorites('Гордость и предубеждение и зомби')
 
